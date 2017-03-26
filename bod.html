@@ -23,9 +23,9 @@ html, body {
     max-width: 1000px;
     margin: 0 auto;
     height: 100%;
-    min-height: 1610px;
+    min-height: 800px;
     overflow-x: hidden;
-    background-color: rgb(227, 227, 227); 
+    background-color: #dedede; 
 
 }
 .wrapper:after {
@@ -87,12 +87,12 @@ ul li a {
 ul li ul li {
     width: 100%;
     border-bottom: 1px solid #9f9f9f;
-    background: #dddddd;
+    background: #b7b7b7;
     margin-bottom: -1px;
     
 }
 ul li ul li a {
-    color: #0a0d12;
+    color: #020202;
 }
 li {
     display: inline-block;
@@ -110,46 +110,11 @@ nav li span {
     background-size: cover;
     display: none;
 }
-.ceo {
-	margin-top: 20px;
-    float: left;
-/*    background: #82aa82;*/
-
-}
-.ceo-pic {
-	width: 200px;
-    height: 250px;
-    float: left;
-    background: #818181;
-    margin: 5px;
-    margin-left: 15px;
-    margin-right: 10px;
-/*    border: 1px solid red;*/
-}
-.ceo-msg {
-	border-right: 2px solid #2c2c2c;
-    padding: 15px;
-    width: 730px;
-}
-.ceo-msg p {
-	text-align: justify;
-    line-height: 24px;
-    font-size: 16px;
-}
-.ceo:after {
-    content: "";
-    height: 0;
-    visibility: hidden;
-    display: block;
-    clear: both;
-/*    border: 1px solid red*/
-}
-
 .quick-links {
 /*	border: 1px solid green;*/
     width: 220px;
     float: right;
-    margin-top: 20px;
+    margin-top: -45px;
     margin-right: 10px;
 } 
 .quick-links table {
@@ -190,121 +155,49 @@ table a:hover {
     clear: both;
 /*    border: 1px solid red*/
 }
-.feedback {
-/*	border: 1px solid #810081;*/
-    float: right;
-    width: 220px;
-    margin-right: 10px;
-    text-align: center;
-    margin-top: 30px;
-    box-shadow: 0px 0px 11px #2a2a2a;
-}
-.feedback h1 {
-	font-size: 18px;
-    font-weight: bold;
-    background: #1d4e6c;
-    padding: 6px;
-    color: #ddd;
-}
-.feedback p {
-	font-size: 16px;
-    line-height: 22px;
-    padding: 6px;
-    background: linear-gradient(#68b0cb, #a8c5d9);
-}
-.feedback a {
-	text-decoration: none;
-    color: blue;
-}
-.feedback:after {
-    content: "";
-    height: 0;
-    visibility: hidden;
-    display: block;
-    clear: both;
-/*    border: 1px solid red*/
-}
-.objective {
-	clear: both;
-/*    border: 1px solid #572500;*/
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    top: 60px;
-    background: linear-gradient(#e3a026, #ceb27f);
-    box-shadow: 0px 0px 11px #2a2a2a;
-}
-.objective h1 {
-	font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    color: #dddddd;
-    background: #be5800;
-    letter-spacing: 4px;
-    padding: 8px;
-}
-.objective ul {
-	padding: 20px;
-}
-.objective li {
-	font-size: 16px;
-    line-height: 25px;
-    display: block;
-    
-}
-.commit {
+.heading {
+    font-family: "Century Gothic";
+	font-size: 24px;
     float: left;
-	margin-top: 80px;
-    margin-left: 97px;
+    color: #cbcbcb;
+    padding: 10px;
+    margin-top: 70px;
 /*    border: 1px solid red;*/
-    width: 30%;
+    width: 730px;
     text-align: center;
-    background: linear-gradient(#cb6161, #c78f8f);
-    box-shadow: 0px 0px 11px #2a2a2a;
+    background: #212829;
 }
-.commit h1 {
-	font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    padding: 8px;
-    background: #5f142e;
-    color: #dddddd;
-}
-.commit ul {
-	padding: 8px;
-    padding-left: 6px;
-    list-style-type: none;
-}
-.commit li {
-    font-size: 16px;
-    line-height: 25px;
-    display: block;
-}
-.philosophy {
-    float: right;
-	margin-top: 80px;
-    margin-right: 97px;
+.main {
 /*    border: 1px solid red;*/
-    width: 42%;
-    background: linear-gradient(#34a4a8, #89b6bc);
-    box-shadow: 0px 0px 11px #2a2a2a;
+    max-width: 720px;
+    
+    float: left;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
-.philosophy h1 {
-	font-size: 18px;
-    font-weight: bold;
+.pic {
+    border: 1px solid #083300;
+    padding: 6px;
+    margin: 10px;
+    background: #252a36;
+}
+.pic img {
+    width: 207px;
+    height: 280px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pic h4 {
+    font-family: "Century Gothic";
     text-align: center;
-    padding: 8px;
-    background: #0f254e;
-    color: #dddddd;
-}
-.philosophy ul {
-	padding: 10px;
-}
-.philosophy li {
-    font-size: 15px;
-    line-height: 25px;
-    display: block;
+    color: #c1c1c1;
+    font-size: 12px;
+    padding: 6px;
 }
 footer {
     background: #202b39;
@@ -391,11 +284,10 @@ footer p {
     fill: #3b5998;
 }
 
-/*ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
 @media screen and (max-width: 768px) {
 .wrapper {
 	height: 100%;
-    min-height: 2000px;
+    min-height: 1000px;
 }
 .navbar {
 /*	border: 1px solid red;*/
@@ -448,137 +340,22 @@ nav li span {
     transition: 0.7s;
     transform: rotateZ(-180deg);
 }
-.ceo {
-	margin-top: 0;
+.heading {
+	width: 100%;
     float: none;
-    width: 96%;
-    margin-left: auto;
-    margin-right: auto;
-
-}   
-.ceo-pic {
-	width: 150px;
-    height: 200px;
-    float: left;
-    background: #818181;
-    margin: 5px;
-    margin-left: 15px;
-    margin-right: 10px;
-/*    border: 1px solid red;*/
+    font-size:18px;
+    margin-top: 10px;
 }
-.ceo-msg {
-	border: none;
-/*    padding: 15px;*/
-    width: 95%;
+.main {
+	margin-top: 10px;
 }
-.ceo-msg h1 {
-	text-align: center;
-    font-size: 20px;
-    margin-bottom: 12px;
-}
-.ceo-msg p {
-	text-align: justify;
-    line-height: 24px;
-    font-size: 16px;
-    
-}   
-.ceo:after {
-    content: "";
-    height: 0;
-    visibility: hidden;
-    display: block;
-    clear: both;
-/*    border: 1px solid red*/
-}
-.quick-links {
+ .quick-links {
 /*	border: 1px solid green;*/
     width: 45%;
-    float: right;
-    margin-top: 10px;
-    margin-right: 25px;
-}
-.feedback {
-/*	border: 1px solid #810081;*/
-    width: 45%;
-    height: 380px;
-    float: left;
-    margin-top: 10px;
-    margin-left: 25px;
-}
-.feedback h1 {
-	font-size: 24px;
-    letter-spacing: 3px;
-    padding: 6px;
-}
-.feedback p {
-	font-size: 24px;
-    line-height: 32px;
-    padding: 10px;
-    height: 320px;
-}
-.objective {
-	clear: both;
-/*    border: 1px solid #572500;*/
-    width: 93%;
-    margin-left: auto;
+    float: none;
+    margin-top: 20px;
     margin-right: auto;
-    position: relative;
-    top: 30px;
-    background: linear-gradient(#e3a026, #ceb27f);
-    box-shadow: 0px 0px 11px #2a2a2a;
-}
-.commit {
-    float: left;
-	margin-top: 50px;
-    margin-left: 25px;
-/*    border: 1px solid red;*/
-    width: 35%;
-    text-align: center;
-    background: linear-gradient(#cb6161, #c78f8f);
-    box-shadow: 0px 0px 11px #2a2a2a;
-}
-.commit h1 {
-	font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    padding: 8px;
-    background: #5f142e;
-    color: #dddddd;
-}
-.commit ul {
-	padding: 8px;
-    padding-left: 6px;
-    list-style-type: none;
-}
-.commit li {
-    font-size: 16px;
-    line-height: 25px;
-    display: block;
-}
-.philosophy {
-    float: right;
-	margin-top: 50px;
-    margin-right: 25px;
-/*    border: 1px solid red;*/
-    width: 55%;
-    background: linear-gradient(#34a4a8, #89b6bc);
-    box-shadow: 0px 0px 11px #2a2a2a;
-}
-.philosophy h1 {
-	font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    padding: 8px;
-    background: #0f254e;
-    color: #dddddd;
-}
-.philosophy ul {
-	padding: 10px;
-}
-.philosophy li {
-    font-size: 15px;
-    line-height: 25px;
-    display: block;
+     margin-left: auto;
 }
 footer {
     background: #202b39;
@@ -628,53 +405,23 @@ footer p {
 /* lllllllllllllllllllllllllllllllllllllllllllllllllllll */
 @media screen and (max-width: 370px) {
 .wrapper {
-    background: #4f87bf;
+    background: #dedede;
     height: 100%;
-    min-height: 2100px;
+    min-height: 900px;
 }
 .hambrgr {
 	position: absolute;
     top: 65px;
     right: 12px;
 }
-.ceo {
-	margin-top: 5px;
-    margin-left: -1px;
+.heading {
+	width: 100%;
     float: none;
-    width: 95%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    
-
-}   
-.ceo-pic {
-    display: none;
-    
+    font-size:18px;
+    margin-top: 10px;
 }
-.ceo-msg {
-	border: none;
-/*    padding: 15px;*/
-    width: 90%;
-    padding: 0;
-    width: 97%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.ceo-msg h1 {
-	text-align: center;
-    font-size: 20px;
-    margin-bottom: 12px;
-    width: 100%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.ceo-msg p {
-	text-align: justify;
-    line-height: 24px;
-    font-size: 16px;
+.main {
+	margin-top: 10px;
 }
 .quick-links {
 /*	border: 1px solid green;*/
@@ -684,82 +431,24 @@ footer p {
     margin-left: auto;
     margin-right: auto;
 }
-.feedback {
-/*	border: 1px solid #810081;*/
-    width: 90%;
-    height: 140px;
-    float: none;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.feedback h1 {
-	font-size: 18px;
-    letter-spacing: 3px;
-    padding: 6px;
-}
-.feedback p {
-	font-size: 16px;
-    line-height: 25px;
-    padding: 10px;
-    height: 140px;
-} 
-.objective {
-	clear: both;
-/*    border: 1px solid #572500;*/
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    background: linear-gradient(#e3a026, #ceb27f);
-    box-shadow: 0px 0px 11px #2a2a2a;
-}
-.objective li {
-	font-size: 15px;
-    text-align: left;
-    width: 92%;
-}
-.commit {
-    float: none;
-	margin-top: 50px;
-/*    border: 1px solid red;*/
-    width: 90%;
-    text-align: center;
-    background: linear-gradient(#cb6161, #c78f8f);
-    box-shadow: 0px 0px 11px #2a2a2a;
-    margin-left: auto;
-    margin-right: auto;
-}
-.philosophy {
-    float: none;
-	margin-top: 20px;
-/*    border: 1px solid red;*/
-    width: 90%;
-    background: linear-gradient(#34a4a8, #89b6bc);
-    box-shadow: 0px 0px 11px #2a2a2a;
-    margin-left: auto;
-    margin-right: auto;
-}
-.philosophy li {
-	width: 95%;
-}
-}   
+}  
 
-</style>
-</head>
+
+        </style>
+    </head>
 <body>
-<div class="wrapper">
+    <div class="wrapper">
         <div class="logo"><img src="headr.png" alt="d"></div>
         <div class="hambrgr"></div>
         <div class="navbar">
         <nav class="nav">
             <ul class="menu-items" id="menu">
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#">Organization<span> &#9660;</span></a>
                 <ul class="hidden">
-                    <li><a href="introduction.html">Introduction</a></li>
+                    <li><a href="#">Introduction</a></li>
                     <li><a href="#">Oraganogram</a></li>
-                    <li><a href="bod.html">BOD</a></li>
+                    <li><a href="#">BOD</a></li>
                     <li><a href="#">GM Message</a></li>
                     <li><a href="#">Technical Overview</a></li>
                     <li><a href="#">Financial Overview</a></li>
@@ -793,26 +482,42 @@ footer p {
             </ul>
         </nav>
         </div>
-
-    <div class="ceo">
-        <div class="ceo-pic"></div>
-        <div class="ceo-msg">
-           <h1>CEO Message</h1>
-<p>I take this opportunity to apprise to our valued customers on QESCO’s broad line activates that QESCO is operating as Power Distribution Company and will act as private organization on swaping over from Public to Private Sector. QESCO is dealing with power supply system in whole Balochistan except District Lasbela. It is smallest in terms of customers, but largest as it covers 43% area of Pakistan. QESCO is sustaining a serious deficit in Electric supply and despite best endeavor on our part we still encounter a variety of challenges.</p>
-
-<p>In order to offset the huge power deficit against current demand besides projected one 220KV Dadu-Khuzdar &amp; Dera Ghazi Khan-Loralai project already stand approved and under execution by NTDC formation. Commissioning of these T/Lines will enhance power availability by 730 MW which will play a virtual role in reducing load shedding duration beside improved voltage profiles on availability of various segments &amp; alternative recommendations for Power Plants at Quetta, Sibbi, Khuzdar &amp; Loralai to mitigate power constraints on availability of local sources of formations.</p>
-
-<p>In order to mitigate load shedding and low voltage problems in Jafferabad, Naseerabad and Jhal Magsi Districts, execution of 220/132KV Grid station at Dera Murad Jamali is under progress by NTDC formation. Up gradation of existing 66KV system into 132KV in Districts mentioned above on simultaneous activity will be carried out in 2nd stage, or can be continued subject to funding by GOP.</p>
-
-<p>As far as load shedding issues in Mekran are concerned, enhancement of existing agreement from 35MW to70MW has been signed between Government of Pakistan and Iran. Arrangements to enhance capacity as per agreement on Iranian side is under active progress. The availability of enhanced power would be adequate to meet with current demand of entire Mekran area projected demand upto 2015. More 100MW power will be imported from Iran for Gawadar Mega city. This much power will be imported from Iran on 230KV network under approved project.</p>
-
-<p>After completion of above projects, not only the low voltage profile which persist perpetually all over the province shall be mitigated appreciably but shall also solve the long standing load shedding problem which has unfortunately hit very severely the agri- lived society as well as public at large.</p>
-
-<p>We look forward and value most of the suggestions by our respected customers.</p>
-    </div>
-    </div> <!-- CEO Section End -->
-
-    <div class="quick-links">
+        <h1 class="heading">Board of Directors</h1>
+        <div class="main">
+        <div class="pic">
+        <img src="abdul-khalik%20baloch.JPG" alt="Mr. ABDUL KHALIQ BALOCH">
+        <h4>Mr. ABDUL KHALIQ BALOCH</h4>
+        </div>
+        <div class="pic">
+        <img src="ce2.JPG" alt="Mr. Balig-uz-Zaman Siddique (CEO)">
+        <h4>Mr. Balig-uz-Zaman Siddique (CEO)</h4>
+        </div>
+        <div class="pic">
+        <img src="sohail-akber-shah.JPG" alt="Mr. SOHAIL AKBAR SHAH">
+        <h4>Mr. SOHAIL AKBAR SHAH</h4>
+        </div>
+        <div class="pic">
+        <img src="syed-sharfudin.JPG" alt="Mr.SYED SHARAFUDIN">
+        <h4>Mr.SYED SHARAFUDIN</h4>
+        </div>
+        <div class="pic">
+        <img src="mir-kabeer-ahmed.JPG" alt="Mr.MIR KABEER AHMED">
+        <h4>Mr.MIR KABEER AHMED</h4>
+        </div>
+        <div class="pic">
+        <img src="rai-umer-poonegar.JPG" alt="Mr. RAI UMER POONEGAR">
+        <h4>Mr. RAI UMER POONEGAR</h4>
+        </div>
+        <div class="pic">
+        <img src="mir-wais-khan.JPG" alt="Mr.MIR WAIS KHAN ACHAKZAI">
+        <h4>Mr.MIR WAIS KHAN ACHAKZAI</h4>
+        </div>
+        <div class="pic">
+        <img src="hussain-islam.JPG" alt="Mr. HUSSAIN ISLAM">
+        <h4>Mr. HUSSAIN ISLAM</h4>
+        </div>
+        </div>
+        <div class="quick-links">
         <table>
             <tr>
                 <th>Quick Links</th>
@@ -855,48 +560,11 @@ footer p {
             </tr>
         </table>
     </div> <!-- Q Links Section End -->
-    <div class="feedback">
-        <h1>Feedback</h1>
-        <p>We always welcome the feed back of our gracious customers who   have played a vital role in improving our quality of service send your feed back to <a href="#">feedback@qesco.com.pk</a></p>
-    </div>
-    <div class="objective">
-        <h1>OBJECTIVES</h1>
-        <ul>
-            <li><span>▶</span> Self Reliant and independent Entity</li>
-            <li><span>▶</span> To be a good corporate citizen</li>
-            <li><span>▶</span> Expansion of infrastructure commensurate to the consumer growth</li>
-            <li><span>▶</span> Provide stable and reliable electricity</li>
-            <li><span>▶</span> Institute surveillance system to curb theft/illegal activities</li>
-            <li><span>▶</span> Provide efficient customer service to ensure consumer satisfaction</li>
-            <li><span>▶</span> Keep the line losses within permissible limits</li>
-            <li><span>▶</span> Ensure 100% recovery</li>
-            <li><span>▶</span> Employee motivation/satisfaction</li>
-            <li><span>▶</span> Training and development</li>
-            <li><span>▶</span> Efficient Material Management</li>
-        </ul>
-    </div>
-    <div class="commit">
-        <h1>Our Commitment</h1>
-        <ul>
-            <li>Improve customer satisfaction </li>
-            <li>Reduce Line Losses</li>
-            <li>Increase revenue generation</li>
-            <li>Weed out corruption</li>
-        </ul>
-    </div>
-    <div class="philosophy">
-        <h1>Management philosophy</h1>
-        <ul>
-            <li><span>▶</span> Open door policy for all</li>
-            <li><span>▶</span> Tackle all problems upfront</li>
-            <li><span>▶</span> Merit, justice, fair play be the hallmark</li>
-            <li><span>▶</span> Transparency in all fields and accountability of everyone</li>
-        </ul>
-    </div>
-</div>
+    
+    </div>  <!-- Wrapper End -->
 <footer>
            <p>Naeem Rind &copy; 2017</p>
-           <div class="social">
+             <div class="social">
         <svg id="google-svg" width="40px" height="40px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <g class="g-plus" id="Page-1" stroke="none" stroke-width="1" fill="" fill-rule="evenodd" sketch:type="MSPage">
         <g class="google-plus" id="Icons-Social" sketch:type="MSLayerGroup" transform="translate(-43.000000, -169.000000)" fill="">
@@ -937,11 +605,11 @@ footer p {
     </footer>
 <script src="jquery-3.1.1.min.js"></script>
 <script>
-    $(document).ready(function(){
+        $(document).ready(function(){
         $("nav li").hover(function(){
-        $(this).children('ul').stop().slideDown('777');
+        $(this).children('ul').stop().slideDown('500');
         }, function () {
-        $('ul', this).stop().slideUp('777');            
+        $('ul', this).stop().slideUp('500');            
         });
         
         /* Prevent Hash Anchors from jumping to the top on click */
@@ -957,24 +625,6 @@ footer p {
            $('.nav').slideToggle();
             $('.hambrgr').toggleClass('close');
         });
-        
-
-        
-    });
+        });
 </script>
 </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
