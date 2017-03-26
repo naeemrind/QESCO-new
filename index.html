@@ -25,7 +25,7 @@ html, body {
     height: 100%;
     min-height: 1610px;
     overflow-x: hidden;
-    background-color: #dedede; 
+    background-color: rgb(186, 73, 73); 
 
 }
 .wrapper:after {
@@ -87,12 +87,12 @@ ul li a {
 ul li ul li {
     width: 100%;
     border-bottom: 1px solid #9f9f9f;
-    background: #b7b7b7;
+    background: #dddddd;
     margin-bottom: -1px;
     
 }
 ul li ul li a {
-    color: #020202;
+    color: #0a0d12;
 }
 li {
     display: inline-block;
@@ -151,17 +151,13 @@ nav li span {
     float: right;
     margin-top: 20px;
     margin-right: 10px;
-    transition: 0.4s;
-}
-.quick-links:hover {
-	box-shadow: 0px 0px 11px #2a2a2a;
-}
+} 
 .quick-links table {
 	text-align: center;
     width: 100%;
     border-collapse: collapse;
     background: linear-gradient(#5ecb5e, #9eea9e);
-    
+    box-shadow: 0px 0px 11px #2a2a2a;
 }
 th {
 /*    border: 1px solid red;*/
@@ -200,13 +196,8 @@ table a:hover {
     width: 220px;
     margin-right: 10px;
     text-align: center;
-    cursor: default;
     margin-top: 30px;
-    transition: 0.4s;
-    
-}
-.feedback:hover p {
-	box-shadow: 0px 0px 11px #2a2a2a;
+    box-shadow: 0px 0px 11px #2a2a2a;
 }
 .feedback h1 {
 	font-size: 18px;
@@ -220,7 +211,6 @@ table a:hover {
     line-height: 22px;
     padding: 6px;
     background: linear-gradient(#68b0cb, #a8c5d9);
-    transition: 0.4s;
 }
 .feedback a {
 	text-decoration: none;
@@ -243,11 +233,7 @@ table a:hover {
     position: relative;
     top: 60px;
     background: linear-gradient(#e3a026, #ceb27f);
-    transition: 0.3s;
-    
-}
-.objective:hover {
-	box-shadow: 2px 2px 10px #0b0b0b;
+    box-shadow: 0px 0px 11px #2a2a2a;
 }
 .objective h1 {
 	font-size: 18px;
@@ -275,11 +261,7 @@ table a:hover {
     width: 30%;
     text-align: center;
     background: linear-gradient(#cb6161, #c78f8f);
-    transition: 0.3s;
-    
-}
-.commit:hover {
-	box-shadow: 0px 0px 11px #0f0f0f;
+    box-shadow: 0px 0px 11px #2a2a2a;
 }
 .commit h1 {
 	font-size: 18px;
@@ -306,11 +288,7 @@ table a:hover {
 /*    border: 1px solid red;*/
     width: 42%;
     background: linear-gradient(#34a4a8, #89b6bc);
-    transition: 0.3s;
-    
-}
-.philosophy:hover {
-	box-shadow: 0px 0px 11px #2a2a2a;
+    box-shadow: 0px 0px 11px #2a2a2a;
 }
 .philosophy h1 {
 	font-size: 18px;
@@ -650,7 +628,7 @@ footer p {
 /* lllllllllllllllllllllllllllllllllllllllllllllllllllll */
 @media screen and (max-width: 370px) {
 .wrapper {
-    background: #dedede;
+    background: #4f87bf;
     height: 100%;
     min-height: 2100px;
 }
@@ -734,7 +712,7 @@ footer p {
     margin-right: auto;
     margin-top: 40px;
     background: linear-gradient(#e3a026, #ceb27f);
-    box-shadow: 0px 0px 3px #2a2a2a;
+    box-shadow: 0px 0px 11px #2a2a2a;
 }
 .objective li {
 	font-size: 15px;
@@ -748,7 +726,7 @@ footer p {
     width: 90%;
     text-align: center;
     background: linear-gradient(#cb6161, #c78f8f);
-    box-shadow: 0px 0px 3px #2a2a2a;
+    box-shadow: 0px 0px 11px #2a2a2a;
     margin-left: auto;
     margin-right: auto;
 }
@@ -758,7 +736,7 @@ footer p {
 /*    border: 1px solid red;*/
     width: 90%;
     background: linear-gradient(#34a4a8, #89b6bc);
-    box-shadow: 0px 0px 2px #2a2a2a;
+    box-shadow: 0px 0px 11px #2a2a2a;
     margin-left: auto;
     margin-right: auto;
 }
@@ -961,9 +939,9 @@ footer p {
 <script>
     $(document).ready(function(){
         $("nav li").hover(function(){
-        $(this).children('ul').stop().slideDown('500');
+        $(this).children('ul').stop().slideDown('777');
         }, function () {
-        $('ul', this).stop().slideUp('500');            
+        $('ul', this).stop().slideUp('777');            
         });
         
         /* Prevent Hash Anchors from jumping to the top on click */
